@@ -20,9 +20,9 @@ router.post('/users', async (req, res) => {
     // user.save().then(() => {
     //     res.status(201).send(user);
     // }).catch((error) => {
-    //    // console.log('Error found ' + error);
+    //    console.log('Error found ' + error);
     //    res.status(400).send(error);
-    //   // res.send(error);
+    //    res.send(error);
     // });
 });
 
@@ -72,17 +72,6 @@ router.get('/users/:id', async (req, res) => {
     } catch (e) {
         res.status(500).send();
     }
-
-    // User.findById(_id).then((user) => {
-    //     if (!user) {
-    //         return res.status(404).send();
-    //     }
-
-    //     res.send(user);
-
-    // }).catch((e) => {
-    //     res.status(500).send();
-    // });
 });
 
 router.patch('/users/:id', async (req, res) => {
