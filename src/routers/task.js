@@ -12,12 +12,6 @@ router.post('/tasks', async (req, res) => {
     } catch (e) {
         res.status(400).send(e);
     }
-
-    // task.save().then(() => {
-    //     res.status(201).send(task);
-    // }).catch((error) => {
-    //    res.status(400).send(error);
-    // });
 });
 
 router.get('/tasks', async (req, res) => {
@@ -29,11 +23,6 @@ router.get('/tasks', async (req, res) => {
         res.status(500).send();
     }
     
-    // Task.find({}).then((tasks) => {
-    //     res.send(tasks);
-    // }).catch((e) => {
-    //     res.status(500).send();
-    // });
 });
 
 router.get('/tasks/:id', async (req, res) => {
