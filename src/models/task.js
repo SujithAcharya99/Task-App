@@ -20,18 +20,6 @@ const taskSchema = new mongoose.Schema({
     timestamps: true
 });
 
-
 const Task = mongoose.model('Task', taskSchema)
-
-// const task = new Task({
-//     description: 'Task-app',
-//     completed: true
-// });
-
-// task.save().then(() => {
-//     console.log(task);
-// }).catch((error) => {
-//     console.log(error);
-// });
 
 module.exports = Task;
