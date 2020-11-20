@@ -1,23 +1,8 @@
 const request = require('supertest');
-// const jwt = require('jsonwebtoken');
-// const mongoose = require('mongoose');
 const app = require('../src/app');
 const User = require('../src/models/user');
-// const { response } = require('../src/app');
 
 const {userOne, userOneId, setUpDatabase } = require('./fixtures/db');
-
-
-// const userOneId = new mongoose.Types.ObjectId();
-// const userOne = {
-//     _id: userOneId,
-//     name: 'Thanush',
-//     email: 'shann@123.com',
-//     password: 'shann123',
-//     tokens: [{
-//         token: jwt.sign({ _id: userOneId}, process.env.JWT_SECRET)
-//     }]
-// }
 
 beforeEach(setUpDatabase);
 
